@@ -1,9 +1,10 @@
+import { Home } from './pages/Home'
 
 function App() {
 
   return (
     <>
-      <p> OLA SOU EU </p>
+      <Home></Home>
     </>
   )
 }
