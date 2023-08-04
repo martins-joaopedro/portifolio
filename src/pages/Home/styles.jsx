@@ -2,21 +2,23 @@ import { styled, keyframes} from "styled-components";
 
 const moving = keyframes`
     0% {
-        background-color: #ccc;
+        background-color: #111111;
     }
     50% {
-        background-color: #ccc ;
+        background-color: #080327;
     }
     75% {
-        background-color: #ccc;
+        background-color: #0b0016;
     }
     100% {
-        background-color: #ccc;  
+        background-color: #111111;  
     }
 `
 
 export const Container = styled.div`
-    background-size: 300%;
     height: 200vh;
-    animation: ${moving} 10s infinite;
+    animation: ${moving} 3s infinite ease-in-out;
+    padding-top: 350px;
+    display: flex;
+    justify-content: center;
 `
