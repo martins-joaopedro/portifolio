@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    height: 300px;
+    height: 200px;
     transition: all 1s;
     
 }
 
 #header-container.scrolling {
-    height: 100px;
+    height: 50px;
     background-color: rgb(255, 255, 255);
     color: #000;
 }
@@ -27,20 +27,83 @@
 
 .socialmedia {
     display: block;
-    width: 50px;
-    background-color: green;
-    aspect-ratio: 1;
 }
 
-.menu {
+.button-menu {
+    border: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.icons {
+    width: 30px;
+    filter: invert();
+}
+
+.menu-tooltip {
+    opacity: 0;
+    background-color: #b6b6b6;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    text-align: center;
+}
+
+.menu-tooltip li {
+    display: block;
+    padding: 15px;
+}
+
+.menu-tooltip li:hover {
+    background-color: #303030;
+}
+
+.show {
+    opacity: 1;
+}
+
+.menu-container {
+    width: 30px;
+    aspect-ratio: 1;
+    position: relative;
     display: none;
-    width: 50px;
-    background-color: blue;
-    aspect-ratio: 1;
-
-    border: 0;
 }
 
-.menu.show {
-    background-color: aqua;
+span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #303030;
+    transition: 0.25s ease-in-out;
+}
+
+#checkbox-menu {
+    opacity: 0;
+}
+
+span:nth-child(1) {
+    top: 0;
+}
+
+span:nth-child(2) {
+    top: 8px    
+}
+
+span:nth-child(3) {
+    top: 16px;
+}
+
+.menu-container.close span:nth-child(1) {
+    opacity: 0;
+}
+
+.menu-container.close span:nth-child(2) {
+    transform: rotate(45deg);
+    top: 8px
+}
+
+.menu-container.close span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px
 }

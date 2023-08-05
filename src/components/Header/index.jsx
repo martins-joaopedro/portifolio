@@ -1,36 +1,52 @@
 import { styled } from "styled-components";
 import { useEffect } from 'react'
-
 import './style.css'
+
+import instagram from '../../assets/images/instagram.png'
 
 export const Header = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            const container = document.getElementById("header-container")
-            container.classList.toggle("scrolling", window.scrollY > 100)
+            let container = document.getElementById("header-container")
+            container.classList.toggle("scrolling", window.scrollY > 10)
         })
     }, [])
 
     const toggleMenu = () => {
-        const menu = document.querySelector(".menu");
-        console.log(menu)
-        menu.classList.toggle("show")
+        const menu = document.querySelector(".menu-container");
+        const tooltip = document.querySelector(".menu-tooltip");
+        menu.classList.toggle("close")
+        tooltip.classList.toggle("show")
     }
 
     return (
         <Container>
             <div id="header-container">
-                <Logo></Logo>
                 <NavList>
                     <li>Sobre mim</li>
                     <li>Formação</li>
                     <li>Projetos</li>
                 </NavList>
                 <LeftIcon>
-                    <div className="socialmedia"></div>
-                    <button className="menu" onClick={toggleMenu}></button>
+                    <div className="socialmedia">
+                    <img class="icons" src={instagram}></img>
+                    </div>
+                    <button className="button-menu" onClick={toggleMenu}>
+                        <div className="menu-container">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
                 </LeftIcon>
+            </div>
+            <div className="menu">
+                <div className="menu-tooltip">
+                    <li>Sobre mim</li>
+                    <li>Formação</li>
+                    <li>Projetos</li>
+                </div>
             </div>
         </Container>
     )
@@ -38,11 +54,12 @@ export const Header = () => {
 
 const LeftIcon = styled.div`   
     @media (max-width: 700px) {
+
         & .socialmedia {
             display: none;
         }
 
-        & .menu {
+        & .menu-container {
             display: block;
         }
     }
@@ -54,6 +71,14 @@ const Container = styled.div`
     left: 0;
     width: 100%;
     z-index: 9999;
+
+    @media (max-width: 700px) {
+        & #header-container {
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            color: #000;
+        }
+    }
 `
 
 const Logo = styled.div`
@@ -67,3 +92,4 @@ const NavList = styled.div`
         display: none;
     }
 `
+
