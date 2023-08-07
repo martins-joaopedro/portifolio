@@ -1,0 +1,16 @@
+.waves {
+    position: relative;
+}
+
+.waves :nth-child(1) {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.waves :nth-child(2) {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+

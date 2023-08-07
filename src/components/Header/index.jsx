@@ -6,12 +6,10 @@ import instagram from '../../assets/images/instagram.png'
 
 export const Header = () => {
 
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            let container = document.getElementById("header-container")
-            container.classList.toggle("scrolling", window.scrollY > 10)
-        })
-    }, [])
+    window.addEventListener("scroll", () => {
+        let container = document.getElementById("header-container")
+        container.classList.toggle("scrolling", window.scrollY > 10)
+    })
 
     const toggleMenu = () => {
         const menu = document.querySelector(".menu-container");
@@ -30,7 +28,7 @@ export const Header = () => {
                 </NavList>
                 <LeftIcon>
                     <div className="socialmedia">
-                    <img class="icons" src={instagram}></img>
+                    <img className="icons" src={instagram}></img>
                     </div>
                     <button className="button-menu" onClick={toggleMenu}>
                         <div className="menu-container">
