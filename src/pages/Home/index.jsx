@@ -10,8 +10,9 @@ export const Home = () => {
     <Container id="home">
       <Text>
         <p>Olá, me chamo</p>
-        <h1>João Pedro</h1>
-        <p>sou desenvolvedor front-end</p>
+        <h1>João Pedro</h1> 
+        <h2> <strong>desenvolvo</strong> diversas soluções!</h2>
+       
       </Text>
 
         <Blob /> 

@@ -15,6 +15,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { Tech } from "../Tech/index.jsx";
 import { Academic } from "../Academic/index.jsx";
 import { Projects } from "../Projects/index.jsx";
+import { Personal } from "../Personal/index.jsx";
 
 const navigateTo = (id) => document.querySelector(`#${id}`).scrollIntoView({ behavior: "smooth"})
 
@@ -33,13 +34,13 @@ export const About = () => {
         </div>
 
         <div className={styles.navigations}>
-          <button onClick={() => navigateTo("academic")}>
+          <button onClick={() => navigateTo("personal")}>
             <IoPersonSharp />
           </button>
-          <button>
+          <button onClick={() => navigateTo("academic")}>
             <HiOutlineAcademicCap />
           </button>
-          <button>
+          <button onClick={() => navigateTo("skills")}>
             <FaLaptopCode />
           </button>
         </div>
@@ -64,9 +65,9 @@ export const About = () => {
         </div>
       </section>
 
+      <Personal />
       <Academic />
       <Tech/>
-      <Projects />
     </div>
   );
 };

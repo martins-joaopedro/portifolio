@@ -1,9 +1,26 @@
 {
   "data": [
     {
+      "name": "Genome Viewer",
+      "image": "src/assets/bookself.png",
+      "description": "Aplicação como apoio para investigação de dados genômicos ",
+      "tech": [
+        { "value": "React", "icon": "" },
+        { "value": "React Charts 2", "icon": "" }
+      ],
+      "status": 0,
+      "results": [
+        "Desenvolvido dentro de um projeto de Iniciação Científica com foco em Bioinformática para apoiar o estudo de resistoma e mobiloma de Enterobacter spp..",
+        "O usuário pode alterar parãmetros e aplicar filtros sobre uma base de dados em JSON para visualizar agrupamentos genômicos."
+      ],
+      "colors": ["#51ABB4", "#7CA9AD", "#878787"],
+      "github": "",
+      "deploy": ""
+    },
+    {
       "name": "BookSelf",
       "image": "src/assets/bookself.png",
-      "description": "Aplicação para Gerenciamento de Coleção Pessoal de Livros",
+      "description": "Aplicação para gerenciamento pessoal de livros",
       "tech": [
         { "value": "Java", "icon": "" },
         { "value": "Swing", "icon": "" }
@@ -14,72 +31,6 @@
         "Com essa Interface Swing, O usuário pode manter sua coleção, adicionar avaliações e ler as de outros usuários, enquanto o administrador pode gerenciar as avaliações e o acervo de livros."
       ],
       "colors": ["#add7e5", "#3f18af", "#43a3e0"],
-      "github": "",
-      "deploy": ""
-    },
-    {
-      "name": "Oinkos",
-      "image": "src/assets/bookself.png",
-      "description": "Aplicação para Controle Pessoal de Finanças",
-      "tech": [
-        { "value": "Next", "icon": "" },
-        { "value": "Tailwind", "icon": "" },
-        { "value": "Figma", "icon": "" }
-      ],
-      "status": 1,
-      "results": [
-        "Desenvolvido em equipe como uma atividade para a disciplina de Modelagem de Sistemas.",
-        "O usuário pode gerenciar seus gastos adicionando e editando suas movimentações de saldo e acessar um relatório mensal, o que permite um maior controle de suas finanças."
-      ],
-      "colors": ["#51ABB4", "#7CA9AD", "#878787"],
-      "github": "",
-      "deploy": ""
-    },
-    {
-      "name": "Person Registry",
-      "image": "",
-      "description": "Serviço para Cadastro e Gerênciamento de Pessoas",
-      "tech": [
-        { "value": "Java", "icon": "" },
-        { "value": "Swing", "icon": "" }
-      ],
-      "status": 0,
-      "date": "11/2024",
-      "results": [
-        "Aplicação construída como uma atividade para a disciplina de Programação Orientada a Objetos",
-        "Consiste em uma Interface Swing que gera uma Tabela que permite adição e gerenciamento de Pessoas que comunica com serviços de validação dos dados."
-      ],
-      "colors": ["#a34108", "#699c51" ],
-      "github": "",
-      "deploy": ""
-    },
-    {
-      "name": "Coffe App",
-      "image": "",
-      "description": "Catálogo de Cafeteria",
-      "tech": [
-        { "value": "Next", "icon": "" },
-        { "value": "Tailwind", "icon": "" },
-        { "value": "Typescript", "icon": "" }
-      ],
-      "status": 1,
-      "date": "",
-      "results": [
-        "Aplicação desenvolvida como forma de aprimorar os estudos em Next"
-      ],
-      "colors": ["#b86d4f"],
-      "github": "",
-      "deploy": ""
-    },
-    {
-      "name": "Valorant API",
-      "image": "",
-      "description": "Loremdcs fdfdf",
-      "tech": [{}],
-      "status": 2,
-      "date": "",
-      "colors": ["#fa4454", "#b78460", "#042e27"],
-      "results": [""],
       "github": "",
       "deploy": ""
     }

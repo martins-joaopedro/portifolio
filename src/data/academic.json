@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "name": "Universidade Federal de Juiz de Fora",
+            "activity": "Bacharelado em Ciência da Computação",
+            "description": "'' Na universidade pude aprender a teoria da computação, desenvolver o pensamento computacional e aprender sobre diversas tecnologias. '' ",
+            "date": "2023 - o momento",
+            "img": "https://www2.ufjf.br/ice/wp-content/uploads/sites/268/2021/07/Reuni.jpg"
+        },
+        {
+            "name": "Centro Federal de Educação Tecnológica",
+            "activity": "Técnico de Nivel Médio em Informática",
+            "description": "'' Aqui tive meu primeiro contato e pude construir minha base na programação! ''",
+            "date": "2020 - 2022",
+            "img": "https://www.dfglp.cefetmg.br/wp-content/uploads/sites/55/2017/04/CEFET-LEOPOLDINA-23.jpg"
+        }
+    ]
+}

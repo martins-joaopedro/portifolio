@@ -1,10 +1,18 @@
 .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.techList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    width: clamp(300px, 95%, 1000px);
-
-    margin: auto;
+    width: clamp(300px, 60%, 700px);
     padding-top: 50px;
 }
 

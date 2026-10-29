@@ -21,7 +21,7 @@ export const ProjectCard = ({ data }) => {
 
   const STATUS = ["Concluído", "Em Andamento", "Pausado"];
 
-  const { ref, inView } = useInView();
+  let { ref, inView } = useInView();
 
   return (
     <div
